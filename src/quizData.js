@@ -1,71 +1,64 @@
 const quizData = [
-    {
-      category: "Technology",  // Teknoloji kategorisi İngilizce
-      question: "Hvad var det første videospil nogensinde lavet?", // İlk video oyunu hangisiydi?
-      options: ["Pong", "Spacewar!", "Tetris", "Computer Space"],
-      answer: "Spacewar!"
-    },
-    {
-      category: "Technology",
-      question: "Hvilket firma udviklede den første kommercielle antivirussoftware?", // İlk ticari antivirüs yazılımını hangi şirket geliştirdi?
-      options: ["Symantec", "McAfee", "Norton", "Kaspersky Lab"],
-      answer: "McAfee"
-    },
-    {
-      category: "Art",  // Sanat kategorisi İngilizce
-      question: "Hvem malede Mona Lisa?", // Mona Lisa'yı kim çizdi?
-      options: ["Vincent Van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
-      answer: "Leonardo da Vinci"
-    },
-    {
-      category: "Art",
-      question: "Hvad er hovedstaden i Frankrig?", // Fransa'nın başkenti nedir?
-      options: ["New York", "London", "Paris", "Dublin"],
-      answer: "Paris"
-    },
-    {
-      category: "Technology",
-      question: "Hvilket dyr er på det officielle PHP-logo?", // PHP logosunda hangi hayvan var?
-      options: ["Elefant", "Flodhest", "Giraf", "Løve"],
-      answer: "Elefant"
-    },
-    {
-      category: "Technology",
-      question: "Hvad står 'HTTP' for?", // HTTP ne anlama gelir?
-      options: ["HyperText Transfer Protocol", "Hyperlink Transfer Technology Protocol", "Hyperlink Text Transfer Protocol", "HyperText Technology Protocol"],
-      answer: "HyperText Transfer Protocol"
-    },
-    {
-      category: "Technology",
-      question: "Hvilket programmeringssprog er kendt som ryggraden på internettet?", // Hangi programlama dili internetin bel kemiği olarak bilinir?
-      options: ["Java", "C#", "Python", "HTML"],
-      answer: "HTML"
-    },
-    {
-      category: "History",  // Tarih kategorisi İngilizce
-      question: "Hvad var navnet på verdens første computerprogrammer?", // Dünyanın ilk bilgisayar programcısının adı nedir?
-      options: ["Charles Babbage", "Ada Lovelace", "Alan Turing", "Grace Hopper"],
-      answer: "Ada Lovelace"
-    },
-    {
-      category: "History",
-      question: "Hvornår blev iPhone først introduceret?", // iPhone ilk kez ne zaman tanıtıldı?
-      options: ["2005", "2007", "2009", "2011"],
-      answer: "2007"
-    },
-    {
-      category: "History",
-      question: "Hvad var Googles oprindelige navn?", // Google'ın orijinal adı neydi?
-      options: ["BackRub", "Googol", "SearchMaster", "WebSearch"],
-      answer: "BackRub"
-    },
-    {
-      category: "Science",  // Bilim kategorisi İngilizce
-      question: "Hvilken planet er den største i vores solsystem?", // Güneş sistemimizdeki en büyük gezegen hangisidir?
-      options: ["Jorden", "Jupiter", "Saturn", "Mars"],
-      answer: "Jupiter"
-    }
-  ];
-  
-  export default quizData;
-  
+  {
+      category: "Nouns and Articles",  // İsimler ve Artikeller
+      question: "Hvad er den ubestemte artikel for 'en bog'?", // 'en bog' için belirsiz artikel nedir?
+      options: ["et", "en", "den", "det"],
+      answer: "en"
+  },
+  {
+      category: "Nouns and Articles",
+      question: "Hvilket artikel bruger vi med ordet 'hus'?", // 'hus' kelimesi için hangi artikel kullanılır?
+      options: ["et", "en", "den", "det"],
+      answer: "et"
+  },
+  {
+      category: "Pronouns",  // Zamirler
+      question: "Hvordan siger man 'vi' på dansk?", // Danca'da 'biz' nasıl söylenir?
+      options: ["I", "De", "Vi", "Han"],
+      answer: "Vi"
+  },
+  {
+      category: "Pronouns",
+      question: "Hvilket dansk pronomen bruges for 'jeg' i flertal?", // 'jeg'in çoğul hali hangi Danca zamirdir?
+      options: ["De", "Vi", "I", "Hun"],
+      answer: "Vi"
+  },
+  {
+      category: "Verbs - Present Tense",  // Fiiller - Geniş Zaman
+      question: "Hvordan siger man 'jeg spiser' på dansk?", // Danca'da 'ben yiyorum' nasıl söylenir?
+      options: ["jeg spiser", "jeg spise", "jeg spist", "jeg spises"],
+      answer: "jeg spiser"
+  },
+  {
+      category: "Verbs - Present Tense",
+      question: "Hvordan siger man 'du drikker' på dansk?", // Danca'da 'sen içiyorsun' nasıl söylenir?
+      options: ["du drikker", "du drikket", "du drikke", "du drikkede"],
+      answer: "du drikker"
+  },
+  {
+      category: "Adjectives",  // Sıfatlar
+      question: "Hvordan siger man 'stor' på engelsk?", // 'stor' İngilizce'de nasıl söylenir?
+      options: ["big", "small", "happy", "sad"],
+      answer: "big"
+  },
+  {
+      category: "Adjectives",
+      question: "Hvordan beskriver man noget meget lille?", // Çok küçük bir şeyi nasıl tanımlarız?
+      options: ["stor", "lille", "lang", "kort"],
+      answer: "lille"
+  },
+  {
+      category: "Questions - Basic Words",  // Sorular - Temel Kelimeler
+      question: "Hvordan siger man 'hvem' på engelsk?", // 'hvem' İngilizce'de nasıl söylenir?
+      options: ["who", "what", "where", "when"],
+      answer: "who"
+  },
+  {
+      category: "Questions - Basic Words",
+      question: "Hvad betyder 'hvor' på engelsk?", // 'hvor' İngilizce'de ne anlama gelir?
+      options: ["who", "what", "where", "when"],
+      answer: "where"
+  }
+];
+
+export default quizData;
