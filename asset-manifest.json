@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/quizAppDanisLina/static/css/main.f855e6bc.css",
-    "main.js": "/quizAppDanisLina/static/js/main.e05f4147.js",
+    "main.css": "/quizAppDanisLina/static/css/main.c90350b6.css",
+    "main.js": "/quizAppDanisLina/static/js/main.256e2d2e.js",
     "static/js/453.f7f759d5.chunk.js": "/quizAppDanisLina/static/js/453.f7f759d5.chunk.js",
     "index.html": "/quizAppDanisLina/index.html",
-    "main.f855e6bc.css.map": "/quizAppDanisLina/static/css/main.f855e6bc.css.map",
-    "main.e05f4147.js.map": "/quizAppDanisLina/static/js/main.e05f4147.js.map",
+    "main.c90350b6.css.map": "/quizAppDanisLina/static/css/main.c90350b6.css.map",
+    "main.256e2d2e.js.map": "/quizAppDanisLina/static/js/main.256e2d2e.js.map",
     "453.f7f759d5.chunk.js.map": "/quizAppDanisLina/static/js/453.f7f759d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e05f4147.js"
+    "static/css/main.c90350b6.css",
+    "static/js/main.256e2d2e.js"
   ]
 }
