@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import quizData from './quizData';
+import './Quiz.css'; // Ek CSS dosyası
 
 function Quiz() {
   const [categories, setCategories] = useState([]);
@@ -11,13 +12,11 @@ function Quiz() {
   const [selectedAnswer, setSelectedAnswer] = useState(""); 
   const [isCorrect, setIsCorrect] = useState(null);
 
-  // Kullanılabilir kategorileri ayıkla
   useEffect(() => {
     const uniqueCategories = [...new Set(quizData.map((item) => item.category))];
     setCategories(uniqueCategories);
   }, []);
 
-  // Seçilen kategoriye göre soruları filtrele
   const handleCategorySelect = (category) => {
     const questionsInCategory = quizData.filter((item) => item.category === category);
     setFilteredQuestions(shuffleArray(questionsInCategory));
@@ -27,7 +26,6 @@ function Quiz() {
     setShowScore(false);
   };
 
-  // Diziyi karıştıran yardımcı fonksiyon
   const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
   const handleAnswerOptionClick = (option) => {
@@ -52,32 +50,41 @@ function Quiz() {
     }, 1000);
   };
 
+  const getScoreMessage = () => {
+    const totalQuestions = filteredQuestions.length;
+    const scoreRatio = (score / totalQuestions) * 100;
+
+    if (scoreRatio === 100) return "Amazing! You got all questions correct 🎉";
+    if (scoreRatio >= 90) return "Great job! Almost perfect! 😎";
+    if (scoreRatio >= 70) return "Good work! You’re getting close! 👍";
+    if (scoreRatio >= 50) return "Not bad! Keep practicing 😊";
+    return "It’s a start! A bit more practice will help 📚";
+  };
+
   return (
     <div className='quiz'>
       {!selectedCategory ? (
-        // Kategori Seçim Ekranı
         <div className='category-selection'>
           <h2>Select a Category</h2>
           {categories.map((category) => (
             <button 
               key={category} 
               onClick={() => handleCategorySelect(category)}
-              style={{ margin: '10px', padding: '10px 20px', fontSize: '1rem' }}
+              className="category-button"
             >
               {category}
             </button>
           ))}
         </div>
       ) : showScore ? (
-        // Skor Ekranı
         <div className='score-section'>
-          You scored {score} out of {filteredQuestions.length}
-          <button onClick={() => setSelectedCategory(null)} style={{ marginTop: '20px' }}>
+          <p>You scored {score} out of {filteredQuestions.length}</p>
+          <p>{getScoreMessage()}</p>
+          <button onClick={() => setSelectedCategory(null)} className="reset-button">
             Choose Another Category
           </button>
         </div>
       ) : (
-        // Soru Ekranı
         <>
           <div className='question-section'>
             <div className='question-count'>
@@ -90,14 +97,14 @@ function Quiz() {
               <button 
                 onClick={() => handleAnswerOptionClick(option)} 
                 key={option}
-                style={{ backgroundColor: selectedAnswer === option ? (isCorrect ? 'lightgreen' : 'pink') : '' }}
+                className={`answer-button ${selectedAnswer === option ? (isCorrect ? 'correct' : 'incorrect') : ''}`}
               >
                 {option}
               </button>
             ))}
           </div>
           {selectedAnswer && (
-            <div style={{ marginTop: '10px' }}>
+            <div className="feedback">
               {isCorrect ? 'Correct! 🎉' : 'Sorry, that’s not right. 😢'}
             </div>
           )}
