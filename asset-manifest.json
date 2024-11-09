@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/quizAppDanisLina/static/css/main.f855e6bc.css",
+    "main.js": "/quizAppDanisLina/static/js/main.b6d1ad78.js",
+    "static/js/453.f7f759d5.chunk.js": "/quizAppDanisLina/static/js/453.f7f759d5.chunk.js",
+    "index.html": "/quizAppDanisLina/index.html",
+    "main.f855e6bc.css.map": "/quizAppDanisLina/static/css/main.f855e6bc.css.map",
+    "main.b6d1ad78.js.map": "/quizAppDanisLina/static/js/main.b6d1ad78.js.map",
+    "453.f7f759d5.chunk.js.map": "/quizAppDanisLina/static/js/453.f7f759d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b6d1ad78.js"
+  ]
+}
